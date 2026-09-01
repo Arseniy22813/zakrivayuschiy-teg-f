@@ -112,7 +112,6 @@
 
 .card__icon-button {
   height: 38px;
-  border: none;
   border: 2px solid transparent;
   padding: 0;
   background-color: transparent;
@@ -158,13 +157,14 @@
   position: relative;
   z-index: 2;
   color: #FFFFFF;
+  line-height: 90%;
   mix-blend-mode: difference;
-  
 }
 
 .save__icon {
   position: relative;
   z-index: 2;
+  flex-shrink: 0;
   width: 21px;
   height: 21px;
   color: #FFFFFF;
@@ -173,10 +173,16 @@
 
 
 .button__aligning {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button__save {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   height: 55px;
   padding: 0 20px;
   font-size: 14px;
@@ -185,7 +191,6 @@
 
 .dialog {
   width: 353px;
-
   padding: 30px;
 }
 
